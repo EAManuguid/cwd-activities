@@ -11,7 +11,6 @@
     <link href="https://materializecss.com/css/prism.css" rel="stylesheet">
     <link href="https://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>navbar test code</title>
 </head>
 <body>
@@ -223,7 +222,7 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">CWD</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#!" data-target="mobile-demo2" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="https://materializecss.com/sass.html">Sass</a></li>
                 <li><a href="https://materializecss.com/badges.html">Components</a></li>
@@ -233,7 +232,7 @@
             </ul>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="mobile-demo2">
         <li><a href="https://materializecss.com/sass.html">Sass</a></li>
         <li><a href="https://materializecss.com/badges.html">Components</a></li>
         <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
@@ -242,20 +241,13 @@
     </ul>
 
     <!-- Scripts -->
-    <script>$(".dropdown-trigger").dropdown();</script>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, options);
-      });</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>if (!window.jQuery) { document.write('<script src="https://code.jquery.com/jquery-3.6.0.min.js"><\/script>'); }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $(".dropdown-trigger").dropdown();
+        $('.sidenav').sidenav();
+        });
     </script>
-    <script src="https://materializecss.com/docs/js/jquery.timeago.min.js"></script>
-    <script src="https://materializecss.com/docs/js/prism.js"></script>
-    <script src="https://materializecss.com/docs/js/lunr.min.js"></script>
-    <script src="https://materializecss.com/docs/js/search.js"></script>
-    <script src="https://materializecss.com/bin/materialize.js"></script>
-    <script src="https://materializecss.com/docs/js/init.js"></script>
 </body>
 </html>
