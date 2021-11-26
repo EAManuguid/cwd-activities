@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://materializecss.com/css/prism.css" rel="stylesheet">
+    <link href="https://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <title>navbar test code</title>
+</head>
+<body>
+    <h4>Fixed Navbar</h4>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">CWD</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                    <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                    <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h4>Right Aligned Links</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="#!" class="brand-logo">CWD</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                    <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                    <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h4>Left Aligned Links</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="#!" class="brand-logo right">CWD</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                    <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                    <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h4>Centering the logo</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="col s12">
+                <a href="#!" class="brand-logo center">CWD
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                        <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                        <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <h4>Active Items</h4>
+    <nav>
+        <div class="nav wrapper">
+            <div class="col s12">
+                <a href="#!" class="brand-logo center">CWD</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                    <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                    <li class="active"><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h4>Extended Navebar with Tabs</h4>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1">Test 1</a></li>
+                <li class="tab"><a href="#test2" class="active">Test 2</a></li>
+                <li class="tab disabled"><a href="#test3">Test 3</a></li>
+                <li class="tab"><a href="#test4">Test 4</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+        <li><a href="https://materializecss.com/badges.html">Components</a></li>
+        <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+    </ul>
+    <div class="col s12" id="test1">test1</div>
+    <div class="col s12" id="test2">test2</div>
+    <div class="col s12" id="test3">test3</div>
+    <div class="col s12" id="test4">test4</div>
+
+    <h4>Navbar Dropdown Menu</h4>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="">one</a></li>
+        <li><a href="">two</a></li>
+        <li class="divider"></li>
+        <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>Icon Links</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="" class="brand-logo"><i class="material-icons">cloud</i>CWD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html"><i class="material-icons">search</i></a></li>
+                <li><a href="https://materializecss.com/badges.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="https://materializecss.com/collapsible.html"><i class="material-icons">refresh</i></a></li>
+                <li><a href="https://materializecss.com/mobile.html"><i class="material-icons">more_vert</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+                <li><a href="https://materializecss.com/badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>Buttons</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn">Button</a></li>
+                <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+                <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>Halfway FAB in Extended Navbar</h4>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a>Link</a></li>
+                <li><a>Link</a></li>
+                <li><a>Link</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <span class="nav-title">Title</span>
+            <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal"><i class="material-icons">add</i></a>
+        </div>
+    </nav>
+
+    <h4>Search Bar</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input type="search" id="search" required>
+                    <label for="search" class="label-icon"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <h4>Mobile Collapse Button]</h4>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <a href="#!" data-target="mobile-demo1" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                <li><a href="https://materializecss.com/mobile.html">Mobile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo1">
+        <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+        <li><a href="https://materializecss.com/badges.html">Components</a></li>
+        <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+        <li><a href="https://materializecss.com/mobile.html">Mobile</a></li>
+    </ul>
+    <br>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">CWD</a>
+            <a href="#!" data-target="mobile-demo2" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+                <li><a href="https://materializecss.com/badges.html">Components</a></li>
+                <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+                <li><a href="https://materializecss.com/mobile.html">Mobile</a></li>
+                <li><a class="btn waves-effect waves-light" href="https://materializecss.com/buttons.html">Buttons</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo2">
+        <li><a href="https://materializecss.com/sass.html">Sass</a></li>
+        <li><a href="https://materializecss.com/badges.html">Components</a></li>
+        <li><a href="https://materializecss.com/collapsible.html">Javascript</a></li>
+        <li><a href="https://materializecss.com/mobile.html">Mobile</a></li>
+        <li><a class="btn waves-effect waves-light" href="https://materializecss.com/buttons.html">Buttons</a></li></li>
+    </ul>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $(".dropdown-trigger").dropdown();
+        $('.sidenav').sidenav();
+        });
+        $('.tabs').tabs();
+    </script>
+</body>
+</html>
